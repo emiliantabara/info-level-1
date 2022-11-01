@@ -8,8 +8,8 @@ int main()
 
     cin >> m >> n >> e >> b;
 
-    X = n * (b - 0) + e;
-    Y = m * (b - 0) + b;
+    X = m * b + e;
+    X = (Y - b) * n;
     cout << "Nr de elevi este: " << X << endl;
     cout << "Nr de banci este: " << Y;
 
