@@ -4,20 +4,27 @@ using namespace std;
 
 int main()
 {
-    int n,s,z,u;
+    int n,sute,zeci,unitati;
     cin >> n;
-    s = n/100;
-    z = n/10%10;
-    u = n%10;
-    if (s%2 == 1 && s==z) {
-        s = z;
-    }
-    if (z%2 == 1 && z==u) {
-        s=z=u;
-        cout << "Numarul are toate cifrele egale";
+    sute = n/100;
+    zeci = n/10%10;
+    unitati = n%10;
+    if (sute==zeci && zeci==unitati) {
+        cout << "Numarul are toate cifrele egale" << endl;
     }
     else {
-        cout << "Numarul nu are toate cifrele egale";
+        cout << "Numarul nu are toate cifrele egale" << endl;
+    }
+    cout << "Verificare" << endl;
+    cout << "Sute: " << sute << " zeci: " << zeci << " unitati: " << unitati << endl;
+
+    // Varianta multiplu de 111
+
+    if (n%111 == 0) {
+        cout << "Numarul are toate cifrele egale" << endl;
+    }
+    else {
+        cout << "Numarul nu are toate cifrele egale" << endl;
     }
     return 0;
 }
