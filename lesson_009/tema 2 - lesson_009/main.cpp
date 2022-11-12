@@ -20,7 +20,7 @@ int main()
 
     // Varianta multiplu de 111
 
-    if (n%111 == 0) {
+    if (n % 111 == 0) {
         cout << "Numarul are toate cifrele egale" << endl;
     }
     else {
