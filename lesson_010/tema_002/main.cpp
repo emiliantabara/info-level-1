@@ -1,4 +1,5 @@
 #include <iostream>
+
 using namespace std;
 
 // Se dă un număr natural nenul n. Să se elimine din n toate zerourile cu care se termină n.
@@ -10,7 +11,7 @@ int main() {
     cin >> n;
 
     // daca nr nu se termina in 0, afiseaza nr initial
-    if (n%10 == 1) {
+    if (n % 10 == 1) {
         cout << n;
         return 0;
     }
