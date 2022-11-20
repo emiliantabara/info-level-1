@@ -1,0 +1,3 @@
+/cygdrive/c/Coding/info-level-1/lesson_010/tema_001/cmake-build-debug/CMakeFiles/tema_001.dir
+/cygdrive/c/Coding/info-level-1/lesson_010/tema_001/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/c/Coding/info-level-1/lesson_010/tema_001/cmake-build-debug/CMakeFiles/rebuild_cache.dir
