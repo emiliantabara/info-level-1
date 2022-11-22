@@ -14,12 +14,17 @@ int main() {
         return -1;
     }
     int x = 1;
-    while (x <= n) {
-        if (x % 2 == 0) {
-            cout << x << " ";
-        }
+    while (x * 2 <= n) {
+        cout << 2 * x << " ";
         x++;
     }
-
+    
+    // varianta 2
+//    while (x <= n) {
+//        if (x % 2 == 0) {
+//            cout << x << " ";
+//        }
+//        x++;
+//    }
     return 0;
 }
