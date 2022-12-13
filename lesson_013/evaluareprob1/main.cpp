@@ -8,8 +8,7 @@ int main() {
     if (S % B == 0) {
         C = S / B;
         P = 0;
-    }
-    if (S % B == 1) {
+    } else {
         C = S / B;
         P = B - (S % B);
     }
