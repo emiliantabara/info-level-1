@@ -5,8 +5,7 @@ using namespace std;
 int main() {
     int n, u, prod;
     cin >> n;
-    if (u % 2 == 0) {
-        cout << "Trb sa aiba cel putin o cifra impara!!!";
+    if (n%10 != 2) {
         return -1;
     }
     prod = 1;
