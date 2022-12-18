@@ -15,19 +15,18 @@ se va afisa: 5 (pentru ca 11 apare astfel: 111111, 111111, 111111, 111111, 11111
 int main() {
     int n, cifre_11, nr_11;
     cin >> n;
-    if (n > 2000000000)
-    {
+    if (n > 2000000000) {
         cout << "Nr introdus este invalid";
         return -1;
     }
 
     nr_11 = 0;
     while (n != 0) {
-        cifre_11  = n % 100;
+        cifre_11 = n % 100;
         if (cifre_11 == 11) {
-                nr_11++;
+            nr_11++;
         }
-        n = n/10;
+        n = n / 10;
     }
     cout << "Nr de aparitii pentru `11`: " << nr_11;
     return 0;
