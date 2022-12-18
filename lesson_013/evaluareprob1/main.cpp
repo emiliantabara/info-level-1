@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// https://www.pbinfo.ro/probleme/3210/cumparaturi
+
 int main() {
     int B, S, C, P;
     cin >> B >> S;
