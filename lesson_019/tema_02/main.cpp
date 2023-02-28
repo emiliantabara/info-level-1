@@ -16,7 +16,7 @@ int main() {
     i = 1;
     while (i < n) {
         fin >> val;
-        if (n_maxim <= val) {
+        if (n_maxim < val) {
             n_maxim = val;
         }
         i++;
