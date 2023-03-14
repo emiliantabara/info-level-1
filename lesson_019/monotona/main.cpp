@@ -7,7 +7,7 @@ Numim o secvenţă monotonă dacă ea este fie crescătoare fie descrescătoare.
 O secvenţă este crescătoare dacă fiecare element este mai mare sau egal cu cel din-naintea lui.
 O secvenţă este descrescătoare dacă fiecare element este mai mic sau egal cu cel din-naintea lui.
 Dată o secvenţă de n numere să se spună dacă este monotonă.
- */
+*/
 
 int main() {
     ifstream fin("../monotona.in");
