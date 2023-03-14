@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
 /*
@@ -34,8 +35,7 @@ int main() {
             isDesc = 0;
         }
         // asc
-        if (val > next_val)
-        {
+        if (val > next_val) {
             isAsc = 0;
         }
         val = next_val;
