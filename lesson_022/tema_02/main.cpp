@@ -20,7 +20,7 @@ int main() {
         }
         else {
             // avem sfarsit de sir crescator, calculam lungimea maxima
-            if (end_secv - start_secv + 1 >= max_lungime){
+            if (end_secv - start_secv + 1 >= max_lungime) {
                 max_lungime = end_secv - start_secv + 1;
             }
             end_secv = i;
