@@ -6,21 +6,23 @@ using namespace std;
 int v[500];
 
 int main() {
-    int n, i, crescator, precedent;
-    cin >> n >> precedent;
-    crescator = 0;
-    for (i = 1; i < n; i++) {
+    int n;
+    bool crescator = false;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
         cin >> v[i];
+    }
+    int precedent = v[0];
+    for (int i = 1; i < n; i++) {
         if (precedent <= v[i]) {
-            crescator = 1;
-        } else {
-            cout << "NU";
-            return 0;
+            crescator = true;
+        }
+        else {
+            crescator = false;
+            break;
         }
         precedent = v[i];
     }
-    if (crescator == 1) {
-        cout << "DA";
-    }
+    crescator ? cout << "DA" : cout << "NU";
     return 0;
 }
