@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
 int vf[100];
@@ -15,7 +16,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         fin >> val;
         vf[val]++;
-        if (val >= lvf){
+        if (val >= lvf) {
             lvf = val;
         }
     }
