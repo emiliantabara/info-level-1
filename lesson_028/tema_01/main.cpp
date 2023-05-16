@@ -3,7 +3,8 @@
 //#include <cstdlib>
 using namespace std;
 
-int vf[100];
+int vf_pare[50];
+int vf_impare[50];
 
 //void generare(int n){
 //    ofstream fout("../pareimpare.in");
@@ -18,27 +19,32 @@ int vf[100];
 
 int main() {
 
-    //generare(10000);
+    //generare(10);
 
     ifstream fin("../pareimpare.in");
     int val;
     // cat timp nu este sfarsit de fisier = end of line
     while (!fin.eof()) {
         fin >> val;
-        vf[val]++;
+        if (val % 2 == 0) {
+            vf_pare[val/2]++;
+        }
+        else {
+            vf_impare[val/2]++;
+        }
     }
 
     ofstream fout("../pareimpare.out");
 
-    for (int i = 1; i < 100; i = i + 2) {
-        if (vf[i] > 0) {
-            fout << i << " ";
+    for (int i = 0; i < 50; i = i+ 1) {
+        if (vf_impare[i] > 0) {
+            fout << (i * 2 + 1) << " ";
         }
     }
     fout << endl;
-    for (int i = 98; i >= 0; i = i - 2) {
-        if (vf[i] > 0) {
-            fout << i << " ";
+    for (int i = 49; i >= 0; i = i- 1) {
+        if (vf_pare[i] > 0) {
+            fout << (2 * i) << " ";
         }
     }
     return 0;
