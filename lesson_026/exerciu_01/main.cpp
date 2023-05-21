@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 // Andrei lucrează într-un magazin de șosete, iar fiecare șosetă are asociat un numar întreg pentru a o identifica mai ușor din ce model face parte.
@@ -15,7 +14,6 @@ int main() {
         cout << "Alege un alt nr";
         return -1;
     }
-
     for (int i = 0; i < n; i++) {
         cin >> val;
         vf[val]++;
