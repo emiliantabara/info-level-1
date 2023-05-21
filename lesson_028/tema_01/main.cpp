@@ -21,9 +21,9 @@ int main() {
 
     //generare(10);
 
-    ifstream fin("../pareimpare.in");
+    ifstream fin("pareimpare.in");
     int val;
-    // cat timp nu este sfarsit de fisier = end of line
+    // cat timp nu este sfarsit de fisier = end of file
     while (!fin.eof()) {
         fin >> val;
         if (val % 2 == 0) {
@@ -34,7 +34,7 @@ int main() {
         }
     }
 
-    ofstream fout("../pareimpare.out");
+    ofstream fout("pareimpare.out");
 
     for (int i = 0; i < 50; i = i+ 1) {
         if (vf_impare[i] > 0) {
